@@ -1,0 +1,50 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    byebug (11.1.3)
+    diff-lcs (1.5.0)
+    mustermann (3.0.0)
+      ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.8)
+    pg (1.4.5)
+    puma (6.0.1)
+      nio4r (~> 2.0)
+    rack (2.2.4)
+    rack-protection (3.0.5)
+      rack
+    rake (12.3.3)
+    rspec (3.12.0)
+      rspec-core (~> 3.12.0)
+      rspec-expectations (~> 3.12.0)
+      rspec-mocks (~> 3.12.0)
+    rspec-core (3.12.0)
+      rspec-support (~> 3.12.0)
+    rspec-expectations (3.12.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.12.0)
+    rspec-mocks (3.12.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.12.0)
+    rspec-support (3.12.0)
+    ruby2_keywords (0.0.5)
+    sinatra (3.0.5)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.0.5)
+      tilt (~> 2.0)
+    tilt (2.0.11)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug
+  pg
+  puma
+  rack
+  rake
+  rspec
+  sinatra
+
+BUNDLED WITH
+   1.17.2
