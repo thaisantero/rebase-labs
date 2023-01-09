@@ -10,13 +10,18 @@ services:
       - gemconfig:/root/.local/share/gem
     ports:
       - "3000:3000"
-    command: 'ruby server.rb'
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    command: "ruby server.rb"
+
   postgres:
     image: postgres
     volumes:
       - pgdata:/var/lib/postgresql/data
     environment:
       POSTGRES_HOST_AUTH_METHOD: "trust"
+  redis:
+    image: redis
 
 
 volumes:
