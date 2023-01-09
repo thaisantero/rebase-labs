@@ -40,4 +40,8 @@ class Database
 	def return_exams
 		@conn.exec("SELECT * FROM exams").to_a
 	end
+
+	def drop_exams
+		@conn.exec("DROP TABLE exams")
+	end
 end
