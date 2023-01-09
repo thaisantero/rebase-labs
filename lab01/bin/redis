@@ -1,0 +1,7 @@
+#!/bin/bash
+
+docker compose run \
+  --name redis \
+  --rm \
+  --service-ports \
+  redis
