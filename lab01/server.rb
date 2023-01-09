@@ -1,7 +1,9 @@
 require 'sinatra'
 require 'rack/handler/puma'
 require 'csv'
-require_relative 'app/csv_importer'
+require_relative "app/jobs/importer_job"
+Dir["./app/*.rb"].each { |file| require file }
+
 set :public_folder, 'public'
 
 get '/tests' do
@@ -15,6 +17,10 @@ end
 
 get '/hello' do
   'Hello world!'
+end
+
+get '/import' do
+  ImporterJob.perform_async
 end
 
 Rack::Handler::Puma.run(
