@@ -18,10 +18,6 @@ get '/index.html' do
   send_file File.join(settings.public_folder, 'views/index.html')
 end
 
-get '/hello' do
-  'Hello world!'
-end
-
 get '/import' do
   ImporterJob.perform_async
 end
