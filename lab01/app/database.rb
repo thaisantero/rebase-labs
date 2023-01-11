@@ -45,4 +45,11 @@ class Database
   def drop_exams
     @conn.exec('DROP TABLE exams')
   end
+
+	def find_by_token(token)
+		@conn.exec(
+			"SELECT * from exams
+			WHERE token_resultado_exame = '#{token}'"
+		).to_a
+	end
 end

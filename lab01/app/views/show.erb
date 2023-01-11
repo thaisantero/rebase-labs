@@ -1,0 +1,57 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body> 
+  <table class="table table-hover">
+    <tr>
+      <th>CPF</th>
+      <th>Nome do Paciente</th>
+      <th>E-mail do Paciente</th>
+      <th>Data de Nascimento do Paciente</th>
+      <th>Endereço do Paciente</th>
+      <th>Cidade do Paciente</th>
+      <th>Estado do Paciente</th>
+      <th>CRM do Médico</th>
+      <th>CRM do Médico do Estado</th>
+      <th>Nome do Médico</th>
+      <th>E-mail do Médico</th>
+      <th>Token</th>
+      <th>Data do Exame</th>
+      <th>Tipo de Exame</th>
+      <th>Limites do Tipo de Exame</th>
+      <th>Resultado do Exame</th>
+
+
+      <th></th>
+
+    </tr>
+
+    <% data.each do |row| %>               
+      <tr>
+        <td><%= row["cpf"] %></td>
+        <td><%= row["nome_paciente"] %></td>
+        <td><%= row["email_paciente"] %></td>
+        <td><%= row["data_nascimento_paciente"] %></td>
+        <td><%= row["endereco_rua_paciente"] %></td>
+        <td><%= row["cidade_paciente"] %></td>
+        <td><%= row["estado_paciente"] %></td>
+        <td><%= row["crm_médico"] %></td>
+        <td><%= row["crm_médico_estado"] %></td>
+        <td><%= row["nome_médico"] %></td>
+        <td><%= row["email_médico"] %></td>
+        <td><%= row["token_resultado_exame"] %></td>
+        <td><%= row["data_exame"] %></td>
+        <td><%= row["tipo_exame"] %></td>
+        <td><%= row["limites_tipo_exame"] %></td>
+        <td><%= row["resultado_tipo_exame"] %></td>
+
+
+      </tr>
+    <% end %>
+  </table>
+</body>

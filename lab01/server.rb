@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+require 'byebug'
 require 'sinatra'
 require 'rack/handler/puma'
 require 'csv'
@@ -7,6 +7,7 @@ require_relative 'app/jobs/importer_job'
 Dir['./app/*.rb'].each { |file| require file }
 
 set :public_folder, 'public'
+set :views, 'app/views'
 
 get '/tests' do
   db = Database.new
@@ -23,6 +24,13 @@ end
 
 get '/import' do
   ImporterJob.perform_async
+end
+
+get '/show/:token' do
+  db = Database.new
+  data = db.find_by_token(params[:token])
+
+  erb :show, locals: { data: }
 end
 
 Rack::Handler::Puma.run(
