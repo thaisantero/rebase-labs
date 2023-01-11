@@ -64,7 +64,7 @@ tabela com dados resumidos.
 
 Para acessar os dados completos de cada token que corresponde 
 a um conjunto de exames do mesmo cpf é
-só clicar no link 'Destalhes' na tabela. Assim, irá
+só clicar no link 'Detalhes' na tabela. Assim, irá
 redirecionar para a URL:
 
 http://localhost:3000/show/:token
