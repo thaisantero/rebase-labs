@@ -10,7 +10,23 @@ Primeiro, clone o repositório:
 git clone git@github.com:thaisantero/rebase-labs.git
 ```
 
-Depois, execute os comandos de forma simultânea:
+Depois tem que subir os containers do postgres, redis, sidekiq
+e servidor. Isso, é possível de duas formas distintas:
+
+1) Executando o docker compose, o qual sobe os containers do
+redis, postgres e servidor, da seguinte forma:
+
+```sh
+docker compose up
+```
+E, de forma simultânea, o container do sidekiq com o comando:
+
+```sh
+bin/sidekiq
+```
+
+2) Subindo cada container de forma separada, executando esses
+comandos:
 
 ```sh
 bin/postgres
@@ -27,23 +43,13 @@ bin/sidekiq
 ```sh
 bin/server
 ```
+## Uso
 
-Com o servidor funcionando acesse a seguinte URL para importar os dados de 'data.csv' para o banco de dados utilizando 
-sidekiq:
+Com o servidor funcionando acesse a seguinte URL para importar os dados de 'data.csv' para o banco de dados:
 
 http://localhost:3000/import
 
-Após importar os dados para o banco pode finalizar a execução dos containers e utilizar o comando:
-
-```sh
-docker compose up
-```
-
-Para executar o docker compose.
-
-## Uso
-
-A URL: 
+A URL:
 
 http://localhost:3000/tests
 
