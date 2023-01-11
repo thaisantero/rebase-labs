@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Importer
   attr_reader :db
 
@@ -7,6 +9,6 @@ class Importer
 
   def execute
     db.create_exams_table
-    CsvImporter.import("./data.csv", db)
+    CsvImporter.import('./data.csv', db)
   end
 end

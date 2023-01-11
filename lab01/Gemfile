@@ -1,10 +1,12 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem "rack"
-gem "sinatra"
-gem "puma"
-gem "pg"
-gem "rake"
-gem "rspec"
-gem "byebug"
-gem "sidekiq"
+source 'https://rubygems.org'
+
+gem 'byebug'
+gem 'pg'
+gem 'puma'
+gem 'rack'
+gem 'rake'
+gem 'rspec'
+gem 'sidekiq'
+gem 'sinatra'

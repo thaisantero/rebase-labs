@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'sinatra'
 require 'rack/handler/puma'
 require 'csv'
-require_relative "app/jobs/importer_job"
-Dir["./app/*.rb"].each { |file| require file }
+require_relative 'app/jobs/importer_job'
+Dir['./app/*.rb'].each { |file| require file }
 
 set :public_folder, 'public'
 
