@@ -44,9 +44,12 @@ $ bin/server
 
 ### Endpoint '/import'
 
-Com o servidor funcionando acesse a seguinte URL para importar os dados de 'data.csv' para o banco de dados:
+Com o servidor funcionando acesse a seguinte URL para utilizar o sidekiq para criar um job que será realizado de forma
+assíncrona. Esse job importa os dados de 'data.csv' para o banco de dados:
 
 http://localhost:3000/import
+
+Ao acessar este enpoint é mostrado um código, este é o código 'id' do job criado.
 
 ![alt text](https://github.com/thaisantero/rebase-labs/blob/main/lab01/images/Screenshot%20from%202023-01-12%2004-44-31.png)
 
