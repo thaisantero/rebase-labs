@@ -1,7 +1,7 @@
 # Rebase-Labs - Thaís Antero
 
 Este projeto foi desenvolvivo com o intuito de estudo e seu escopo 
-foi elaborado seguindo as instruçoes o arquivo [a relative link](informaçoes.md).
+foi elaborado seguindo as instruçoes o arquivo [informacoes.md](informaçoes.md).
 
 ## :whale: Instalação
 
