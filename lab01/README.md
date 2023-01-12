@@ -7,7 +7,7 @@ Este projeto foi desenvolvivo com o intuito de estudo e seu escopo foi elaborado
 Primeiro, clone o repositório:
 
 ```sh
-git clone git@github.com:thaisantero/rebase-labs.git
+$ git clone git@github.com:thaisantero/rebase-labs.git
 ```
 
 Depois suba os containers do postgres, redis, sidekiq
@@ -17,8 +17,9 @@ e servidor. Isso, pode ser realizado de duas formas distintas:
 redis, postgres e servidor, da seguinte forma:
 
 ```sh
-docker compose up
+$ docker compose up
 ```
+
 E, de forma simultânea, o container do sidekiq com o comando:
 
 ```sh
