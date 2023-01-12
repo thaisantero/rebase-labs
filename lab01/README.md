@@ -1,8 +1,9 @@
 # Rebase-Labs - Thaís Antero
 
-Este projeto foi desenvolvivo com o intuito de estudo e seu escopo foi elaborado seguindo as instruçoes o arquivo informaçoes.md.
+Este projeto foi desenvolvivo com o intuito de estudo e seu escopo 
+foi elaborado seguindo as instruçoes o arquivo [a relative link](informaçoes.md).
 
-## Instalação
+## :whale: Instalação
 
 Primeiro, clone o repositório:
 
@@ -41,13 +42,13 @@ $ bin/server
 
 ## Uso
 
-### Endpoint /import
+### Endpoint '/import'
 
 Com o servidor funcionando acesse a seguinte URL para importar os dados de 'data.csv' para o banco de dados:
 
 http://localhost:3000/import
 
-### Endpoint /tests
+### Endpoint '/tests'
 
 A URL:
 
@@ -55,7 +56,9 @@ http://localhost:3000/tests
 
 Apresenta os dados do csv 'data.csv ' na forma de json.
 
-### Endpoint /index.html
+![alt text](https://github.com/thaisantero/rebase-labs/blob/main/lab01/images/Screenshot%20from%202023-01-12%2004-38-48.png)
+
+### Endpoint '/index.html'
 
 Já a URL:
 
@@ -68,7 +71,7 @@ Para acessar os dados completos de cada token que corresponde
 a um conjunto de exames do mesmo cpf é
 só clicar no link 'Detalhes' na tabela. 
 
-### Endpoint /show/:token
+### Endpoint '/show/:token'
 
 Assim, irá redirecionar para a URL:
 
