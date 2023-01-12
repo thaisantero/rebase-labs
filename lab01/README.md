@@ -1,6 +1,6 @@
 # Rebase-Labs - Thaís Antero
 
-Este projeto foi desenvolvivo com o intuito de estudo e seu escopo foi elaborado seguindo as instruçoes o arquivo 'informaçoes.md'.
+Este projeto foi desenvolvivo com o intuito de estudo e seu escopo foi elaborado seguindo as instruçoes o arquivo informaçoes.md.
 
 ## Instalação
 
@@ -10,8 +10,8 @@ Primeiro, clone o repositório:
 git clone git@github.com:thaisantero/rebase-labs.git
 ```
 
-Depois tem que subir os containers do postgres, redis, sidekiq
-e servidor. Isso, é possível de duas formas distintas:
+Depois suba os containers do postgres, redis, sidekiq
+e servidor. Isso, pode ser realizado de duas formas distintas:
 
 1) Executando o docker compose, o qual sobe os containers do
 redis, postgres e servidor, da seguinte forma:
@@ -29,31 +29,32 @@ bin/sidekiq
 comandos:
 
 ```sh
-bin/postgres
+$ bin/postgres
+
+$ bin/redis
+
+$ bin/sidekiq
+
+$ bin/server
 ```
 
-```sh
-bin/redis
-```
-
-```sh
-bin/sidekiq
-```
-
-```sh
-bin/server
-```
 ## Uso
+
+### Endpoint /import
 
 Com o servidor funcionando acesse a seguinte URL para importar os dados de 'data.csv' para o banco de dados:
 
 http://localhost:3000/import
+
+### Endpoint /tests
 
 A URL:
 
 http://localhost:3000/tests
 
 Apresenta os dados do csv 'data.csv ' na forma de json.
+
+### Endpoint /index.html
 
 Já a URL:
 
@@ -64,8 +65,11 @@ tabela com dados resumidos.
 
 Para acessar os dados completos de cada token que corresponde 
 a um conjunto de exames do mesmo cpf é
-só clicar no link 'Detalhes' na tabela. Assim, irá
-redirecionar para a URL:
+só clicar no link 'Detalhes' na tabela. 
+
+### Endpoint /show/:token
+
+Assim, irá redirecionar para a URL:
 
 http://localhost:3000/show/:token
 
