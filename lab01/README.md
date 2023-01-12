@@ -40,13 +40,15 @@ $ bin/sidekiq
 $ bin/server
 ```
 
-## Uso
+## :robot: Uso
 
 ### Endpoint '/import'
 
 Com o servidor funcionando acesse a seguinte URL para importar os dados de 'data.csv' para o banco de dados:
 
 http://localhost:3000/import
+
+![alt text](https://github.com/thaisantero/rebase-labs/blob/main/lab01/images/Screenshot%20from%202023-01-12%2004-44-31.png)
 
 ### Endpoint '/tests'
 
@@ -69,7 +71,9 @@ tabela com dados resumidos.
 
 Para acessar os dados completos de cada token que corresponde 
 a um conjunto de exames do mesmo cpf é
-só clicar no link 'Detalhes' na tabela. 
+só clicar no link 'Detalhes' na tabela.
+
+![alt text](https://github.com/thaisantero/rebase-labs/blob/main/lab01/images/Screenshot%20from%202023-01-12%2004-43-15.png)
 
 ### Endpoint '/show/:token'
 
@@ -78,4 +82,6 @@ Assim, irá redirecionar para a URL:
 http://localhost:3000/show/:token
 
 Este endpoint apresenta os dados completos do conjunto
-de exames relativo ao mesmo Token.  
+de exames relativo ao mesmo Token.
+
+![alt text](https://github.com/thaisantero/rebase-labs/blob/main/lab01/images/Screenshot%20from%202023-01-12%2004-44-06.png)
